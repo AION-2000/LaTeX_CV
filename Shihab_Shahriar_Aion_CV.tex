@@ -44,8 +44,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.7in} % Further reduced from -.6in to -.7in
-\addtolength{\textheight}{1.2in} % Increased from 1.0in to 1.2in
+\addtolength{\topmargin}{-.8in} % <-- CHANGE: Reduced from -.7in to -.8in for more space
+\addtolength{\textheight}{1.3in} % <-- CHANGE: Increased from 1.2in to 1.3in for more space
 
 \urlstyle{same}
 
@@ -55,8 +55,8 @@
 
 % Sections formatting - BOLD AND LARGER HEADINGS
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\Large\bfseries % Reduced from -4pt to -6pt
-}{}{0em}{}[\vspace{-6pt}] % Reduced from -5pt to -6pt
+  \vspace{-8pt}\scshape\raggedright\Large\bfseries % <-- CHANGE: Reduced from -6pt to -8pt
+}{}{0em}{}[\vspace{-8pt}] % <-- CHANGE: Reduced from -6pt to -8pt
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -66,62 +66,62 @@
 
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-3pt}} % Reduced from -2pt to -3pt
+    {#1 \vspace{-4pt}} % <-- CHANGE: Reduced from -3pt to -4pt
   }
 }
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item % Reduced from -2pt to -3pt
+  \vspace{-4pt}\item % <-- CHANGE: Reduced from -3pt to -4pt
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-8pt} % Reduced from -7pt to -8pt
+    \end{tabular*}\vspace{-10pt} % <-- CHANGE: Reduced from -8pt to -10pt
 }
 
 
 \newcommand{\resumeSubSubheading}[2]{
-    \vspace{-3pt}\item % Reduced from -2pt to -3pt
+    \vspace{-4pt}\item % <-- CHANGE: Reduced from -3pt to -4pt
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-8pt} % Reduced from -7pt to -8pt
+    \end{tabular*}\vspace{-10pt} % <-- CHANGE: Reduced from -8pt to -10pt
 }
 
 
 \newcommand{\resumeEducationHeading}[6]{
-  \vspace{-3pt}\item % Reduced from -2pt to -3pt
+  \vspace{-4pt}\item % <-- CHANGE: Reduced from -3pt to -4pt
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-6pt} % Reduced from -5pt to -6pt
+    \end{tabular*}\vspace{-8pt} % <-- CHANGE: Reduced from -6pt to -8pt
 }
 
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-3pt}\item % Reduced from -2pt to -3pt
+    \vspace{-4pt}\item % <-- CHANGE: Reduced from -3pt to -4pt
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-8pt} % Reduced from -7pt to -8pt
+    \end{tabular*}\vspace{-10pt} % <-- CHANGE: Reduced from -8pt to -10pt
 }
 
 
 \newcommand{\resumeOrganizationHeading}[4]{
-  \vspace{-3pt}\item % Reduced from -2pt to -3pt
+  \vspace{-4pt}\item % <-- CHANGE: Reduced from -3pt to -4pt
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small #2} \\
       \textit{\small#3}
-    \end{tabular*}\vspace{-8pt} % Reduced from -7pt to -8pt
+    \end{tabular*}\vspace{-10pt} % <-- CHANGE: Reduced from -8pt to -10pt
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}} % Reduced from -4pt to -5pt
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-6pt}} % <-- CHANGE: Reduced from -5pt to -6pt
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}} % Reduced from -5pt to -6pt
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}} % <-- CHANGE: Reduced from -6pt to -8pt
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -129,51 +129,49 @@
 
 \begin{document}
 
-%---------- HEADING WITH PHOTO ----------
-
+%---------- HEADING WITH PHOTO (COMPACT VERSION) ----------
 \begin{center}
-    \begin{minipage}{0.65\textwidth}
-        \begin{center}
-            \textbf{\Huge \scshape Shihab Shahriar Aion} \\ \vspace{1pt} % Reduced from 2pt to 1pt
-            \small
-            \faMobile \hspace{.5pt} \href{tel:+8801959040057}{+880 1959040057}
-            $|$             \faAt \hspace{.5pt} \href{mailto:aionshihabshahriar@gmail.com}{aionshihabshahriar@gmail.com}
-            $|$             \faGithub \hspace{.5pt} \href{https://github.com/AION-2000}{GitHub} $|$   
-            \faLinkedin \hspace{.5pt} \href{https://www.linkedin.com/in/shihab-shahriar-aion}{LinkedIn} $|$             
+    \begin{minipage}{0.7\textwidth} % <-- CHANGE: Increased from 0.65 to 0.7
+        \centering % <-- CHANGE: More efficient than begin{center}
+        \textbf{\Huge \scshape Shihab Shahriar Aion} \\ \vspace{2pt}
+        \small
+            \faPhone \hspace{.5pt} \href{tel:+8801959040057}{+880 1959040057}
+            $|$ \faAt \hspace{.5pt} \href{mailto:aionshihabshahriar@gmail.com}{aionshihabshahriar@gmail.com}
+            $|$ \faGithub \hspace{.5pt} \href{https://github.com/AION-2000}{GitHub} $|$   
+            \faLinkedin \hspace{.5pt} \href{https://www.linkedin.com/in/shihab-shahriar-aion-578280280/}{LinkedIn} $|$  
+            
             \faMapMarker \hspace{.5pt} Mohammedpur, Dhaka, Bangladesh
-        \end{center}
     \end{minipage}
     \hfill
-    \begin{minipage}{0.3\textwidth}
-        \begin{center}
-            \includegraphics[width=0.6\linewidth]{photo.jpg}
-        \end{center}
+    \begin{minipage}{0.25\textwidth} % <-- CHANGE: Decreased from 0.3 to 0.25
+        \centering % <-- CHANGE: More efficient than begin{center}
+        % Using a fixed height is better for portraits. Adjust 4.5cm as needed.
+        \includegraphics[height=4.5cm]{Photo.jpeg} 
     \end{minipage}
 \end{center}
 
-\vspace{-10pt} % Changed from -8pt to -10pt to move sections up
+\vspace{-15pt} % <-- CHANGE: Reduced from -10pt to -15pt to pull sections up
 
 %----------- ABOUT ME -----------
 
 \section{About Me}
-  \vspace{-2pt} % Changed from 1pt to -2pt
-  \begin{justify} % Added to justify the paragraph
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
+  \begin{justify}
     \small{
-      Passionate Computer Science and Engineering student with expertise in AI, Machine Learning, and Web Development. 
-      Proven ability to develop innovative solutions through various projects involving deep learning, computer vision, and NLP. 
-      Seeking opportunities to apply technical skills in challenging environments and contribute to cutting-edge technological advancements.
+      Enthusiastic Computer Science and Engineering graduate with a strong foundation in AI, Machine Learning, and Web Development. Passionate about transforming ideas into intelligent solutions through innovative coding and research. Hands-on experience with deep learning, computer vision, and NLP projects. Interested in growing in a challenging environment and contributing to impactful technological advancements. Always curious to learn new tools and technologies that expand creative and technical possibilities.
+Motivated to collaborate with forward-thinking teams and make a meaningful difference through technology.
     }
-  \end{justify} % End of justified paragraph
+  \end{justify}
 
 %----------- EDUCATION -----------
 
 \section{Education}
-  \vspace{-2pt} % Changed from 1pt to -2pt
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
   \resumeSubHeadingListStart
     
     \resumeEducationHeading
       {Daffodil International University}{Ashulia, Savar, Dhaka}
-      {Bachelor of Science in Computer Science and Engineering;   \textbf{CGPA: 3.00/4.00}}{2020 \textbf{--} 2024}
+      {Bachelor of Science in Computer Science and Engineering;   \textbf{CGPA: 3.00/4.00}}{2021 \textbf{--} 2025}
       {}{}
         \resumeSubHeadingListStart
         \small{\item{
@@ -188,12 +186,12 @@
 %----------- SKILLS -----------
 
 \section{Skills}
-  \vspace{-2pt} % Changed from 1pt to -2pt
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
   \noindent
   \begin{minipage}[t]{0.65\textwidth}
     \textbf{Core Skills}
-    \vspace{-1pt} % Changed from 1pt to -1pt
-    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-1pt] % Added itemsep=-1pt
+    \vspace{-2pt} % <-- CHANGE: Reduced from -1pt to -2pt
+    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-2pt] % <-- CHANGE: itemsep from -1pt to -2pt
       \small{
         \item \textbf{Programming:} Python, C, Java, JavaScript, SQL, HTML, CSS
         \item \textbf{AI/ML:} TensorFlow, Keras, PyTorch, Scikit-learn, OpenCV
@@ -207,8 +205,8 @@
   \hfill
   \begin{minipage}[t]{0.32\textwidth}
     \textbf{Soft Skills}
-    \vspace{-1pt} % Changed from 1pt to -1pt
-    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-1pt] % Added itemsep=-1pt
+    \vspace{-2pt} % <-- CHANGE: Reduced from -1pt to -2pt
+    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-2pt] % <-- CHANGE: itemsep from -1pt to -2pt
       \small{
         \item Communication
         \item Problem-solving
@@ -225,8 +223,8 @@
 %----------- PROJECTS -----------
 
 \section{Projects}
-    \vspace{-2pt} % Changed from 1pt to -2pt
-    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-2pt] % Changed itemsep from 0pt to -2pt
+    \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
+    \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-3pt] % <-- CHANGE: itemsep from -2pt to -3pt
         \item \small{\textbf{Enhancing Fruit Classification with Deep Learning, Explainable AI (XAI), and a Database-Integrated Application}}
         \item \small{\textbf{Image Captioning using Python}}
         \item \small{\textbf{Iris Flower Classification using KNN and Decision Tree}}
@@ -241,11 +239,11 @@
 %----------- EXTRACURRICULAR ACTIVITIES -----------
 
 \section{Extracurricular Activities}
-  \vspace{-2pt} % Changed from 1pt to -2pt
-  \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-2pt] % Changed itemsep from 0pt to -2pt
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
+  \begin{itemize}[leftmargin=*, nosep, topsep=0pt, itemsep=-3pt] % <-- CHANGE: itemsep from -2pt to -3pt
     \item \small{
       \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        CPC Club, Daffodil International University & \textit{Participant}
+        Computer and Programming Club, Daffodil International University & \textit{Participant}
       \end{tabular*}
     }
     \item \small{
@@ -265,12 +263,12 @@
 %----------- LANGUAGES -----------
 
 \section{Languages}
-  \vspace{-2pt} % Changed from 1pt to -2pt
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{English:}{ Fluent} \\ \vspace{1pt} % Reduced from 3pt to 1pt
+        \textbf{English:}{ Fluent} \\ \vspace{-2pt} % <-- CHANGE: Reduced from 1pt to -2pt
         
-        \textbf{Bengali:}{ Native} \\ \vspace{1pt} % Reduced from 3pt to 1pt
+        \textbf{Bengali:}{ Native} \\ \vspace{-2pt} % <-- CHANGE: Reduced from 1pt to -2pt
         
         \textbf{Hindi:}{ Basic}
     }}
@@ -281,23 +279,23 @@
 %----------- REFERENCES -----------
 
 \section{References}
-  \vspace{-2pt} % Changed from 1pt to -2pt
+  \vspace{-4pt} % <-- CHANGE: Reduced from -2pt to -4pt
   \noindent
   \begin{minipage}[t]{0.48\textwidth}
     \small{
         \textbf{Prof. Dr. Bimal Chandra Das} \\
         Dean In-Charge, Dept. of CSE \\
         Daffodil International University, Bangladesh \\
-        \faPhone\ 01872792257 \quad \faAt\ deanfsit@daffodilvarsity.edu.bd
+        \faPhone\ \href{tel:+8801872792257}{+8801872792257} \quad \faAt\ \href{mailto:deanfsit@daffodilvarsity.edu.bd}{deanfsit@daffodilvarsity.edu.bd}
     }
   \end{minipage}
   \hfill
   \begin{minipage}[t]{0.48\textwidth}
     \small{
-        \textbf{Md. Abbas Ali Khan} \\
-        Assistant Professor, Dept. of CSE \\
-        Daffodil International University, Bangladesh \\
-        \faPhone\ +8801924196829 \quad \faAt\ abbas.cse@diu.edu.bd
+        \textbf{Md. Moshiur Rahman} \\
+        Chief Executive Officer \\
+        Akij Cement Company Ltd, Bangladesh \\
+        \faPhone\ \href{tel:+8801711555074}{+8801711555074} \quad \faAt\ \href{mailto:ceo.accl@akijcement.com}{ceo.accl@akijcement.com}
     }
   \end{minipage}
 
